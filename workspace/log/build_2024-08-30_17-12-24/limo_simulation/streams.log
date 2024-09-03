@@ -1,0 +1,55 @@
+[0.008s] Invoking command in '/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lancepharand11/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/limo_simulation -DCMAKE_INSTALL_PREFIX=/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.097s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.161s] -- Detecting C compiler ABI info - done
+[0.166s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.166s] -- Detecting C compile features
+[0.167s] -- Detecting C compile features - done
+[0.169s] -- Detecting CXX compiler ABI info
+[0.236s] -- Detecting CXX compiler ABI info - done
+[0.242s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.242s] -- Detecting CXX compile features
+[0.242s] -- Detecting CXX compile features - done
+[0.245s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.366s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.444s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.541s] -- Configuring done
+[0.544s] -- Generating done
+[0.545s] -- Build files have been written to: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation
+[0.551s] Invoked command in '/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lancepharand11/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/limo_simulation -DCMAKE_INSTALL_PREFIX=/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation
+[0.552s] Invoking command in '/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lancepharand11/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation -- -j16 -l16
+[0.586s] Invoked command in '/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lancepharand11/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation -- -j16 -l16
+[0.614s] Invoking command in '/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lancepharand11/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation
+[0.620s] -- Install configuration: ""
+[0.621s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/launch
+[0.621s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/launch/limo.launch.py
+[0.621s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/meshes
+[0.621s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/meshes/limo_base.stl
+[0.659s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/meshes/limo_wheel.stl
+[0.666s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/meshes/limo_wheel.dae
+[0.678s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/meshes/limo_base_decimated.dae
+[0.679s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/meshes/limo_base.dae
+[0.731s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/urdf
+[0.731s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/urdf/limo_xacro.xacro
+[0.731s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/urdf/limo_four_diff.gazebo
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/urdf/limo_four_diff.xacro
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/worlds
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/worlds/empty.sdf
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/ament_index/resource_index/package_run_dependencies/limo_simulation
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/ament_index/resource_index/parent_prefix_path/limo_simulation
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/environment/ament_prefix_path.sh
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/environment/ament_prefix_path.dsv
+[0.732s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/environment/path.sh
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/environment/path.dsv
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/local_setup.bash
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/local_setup.sh
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/local_setup.zsh
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/local_setup.dsv
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/package.dsv
+[0.733s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/ament_index/resource_index/packages/limo_simulation
+[0.734s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.734s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/cmake/limo_simulationConfig.cmake
+[0.734s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/cmake/limo_simulationConfig-version.cmake
+[0.734s] -- Installing: /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/install/limo_simulation/share/limo_simulation/package.xml
+[0.736s] Invoked command in '/home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lancepharand11/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/lancepharand11/robot_limo_ws/src/ros-task/workspace/build/limo_simulation

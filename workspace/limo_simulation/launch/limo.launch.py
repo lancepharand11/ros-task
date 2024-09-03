@@ -7,10 +7,10 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, AppendEnvironmentVariable
 from launch.substitutions import LaunchConfiguration, Command, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-
 from launch_ros.actions import Node
-
 from ament_index_python.packages import get_package_share_directory
+from launch.actions import ExecuteProcess
+import os
 
 def get_xacro_to_doc(xacro_file_path, mappings):
     doc = parse(open(xacro_file_path))
@@ -68,7 +68,7 @@ def generate_launch_description():
         package="ros_gz_bridge",
         executable="parameter_bridge",
         arguments=[
-            "/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist",
+            "/cmd_vel@geometry_msgs/msg/TwistStamped@ignition.msgs.Twist", # MODIFIED: used TwistStamped due to diff_drive controller
             "/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock",
             "/model/limobot/odometry@nav_msgs/msg/Odometry[ignition.msgs.Odometry",
             "/world/empty_world/model/limobot/joint_state@sensor_msgs/msg/JointState[ignition.msgs.Model"
@@ -79,11 +79,26 @@ def generate_launch_description():
         ]
     )
 
+    limo_control_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory('limo_control_bringup'), 
+                         "launch/limo_app.launch.py")
+        )
+    )
+
+    run_plotjuggler = ExecuteProcess(
+        cmd=['ros2', 'run', 'plotjuggler', 'plotjuggler'],
+        output='screen',
+        shell=True
+    )
+
     return LaunchDescription([
         DeclareLaunchArgument("use_sim_time", default_value=use_sim_time),
         DeclareLaunchArgument("world_file", default_value=world_file),
         robot_state_publisher,
         gz_spawn_entity,
         gz_sim,
-        gz_ros2_bridge
+        gz_ros2_bridge,
+        limo_control_launch,
+        run_plotjuggler
     ])

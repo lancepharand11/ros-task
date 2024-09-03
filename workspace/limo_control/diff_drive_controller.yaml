@@ -1,0 +1,28 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100 # Hz
+    use_sim_time: true
+
+  diff_drive_base_controller:
+    type: diff_drive_controller/DiffDriveController
+
+diff_drive_base_controller:
+  ros__parameters:
+    left_wheel_names: ["front_left_wheel", "rear_left_wheel"]
+    right_wheel_names: ["front_right_wheel", "rear_right_wheel"]
+
+    publish_rate: 80 # Hz
+    odom_frame_id: odom
+    base_frame_id: base_link
+
+    wheel_separation: 0.172  
+    wheel_radius: 0.045       
+    cmd_vel_timeout: 0.5 
+
+    linear.x.has_velocity_limits: true # Assumed the below limits
+    linear.x.max_velocity: 10.0 
+    linear.x.min_velocity: -10.0
+
+    angular.z.has_velocity_limits: true
+    angular.z.max_velocity: 10.0
+    angular.z.min_velocity: -10.0
